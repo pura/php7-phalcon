@@ -28,5 +28,12 @@ services:
       networks:
           - givemeaname
 
+  db:
+      build: ./container/mysql/centos
+      ports:
+          - "3306:3306"
+      networks:
+          - givemeaname
+
 networks:
   givemeaname:
